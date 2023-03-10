@@ -136,10 +136,20 @@ p {
 }
 /* Hero section */
 .hero-section {
-  background-color: var(--secondary-background-color);
+  display: flex;
   text-align: center;
   padding-top: 188px;
   padding-bottom: 188px;
+
+  flex-grow: 1;
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/people_office_1.jpg);
+
+  background-position: center;
+  background-size: cover;
 }
 
 .hero-title {
@@ -280,6 +290,34 @@ p {
   line-height: 1.5;
   text-align: center;
 }
+.team-social.list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+.team-social-item {
+  width: 40px;
+  height: 40px;
+}
+.team-social.link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: var(--button-color);
+
+  margin-top: 8px;
+}
+.team-social-icon {
+  display: inline;
+  justify-content: center;
+}
+.team-social.link:hover,
+.team-social.link:focus {
+  background-color: tomato;
+}
 /*Portfolio items*/
 .buttons-nav {
   display: flex;
@@ -331,6 +369,9 @@ p {
   padding-top: 100px;
   padding-bottom: 100px;
 }
+.footer.container {
+  display: flex;
+}
 .footer-description {
   display: block;
   width: 264px;
@@ -351,4 +392,42 @@ p {
   color: #e7e9fc;
   font-size: 16px;
   line-height: 1.5;
+}
+.footer-social {
+  display: block;
+  width: 208px;
+  height: 80px;
+  margin-left: 120px;
+  margin-right: auto;
+}
+.social-media {
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  color: var(--primary-background-color);
+  margin-bottom: 16px;
+}
+.social-media.list {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+.social-media-item {
+  width: 40px;
+  height: 40px;
+}
+.media-social.link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.media-social.link:hover,
+.media-social.link:focus {
+  background-color: #31d0aa;
 }
